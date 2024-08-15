@@ -1,0 +1,73 @@
+.resume {
+  padding-left: 5%;
+}
+
+.resume h1 {
+  color: black;
+}
+
+button {
+  color: white;
+  background-color: purple;
+  font-size: x-large;
+  width: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.split-screen {
+  display: flex;
+  height: 100vh;
+}
+
+.left-pane-resume,
+.right-pane-resume {
+  flex: 1; /* This makes both panes take equal space */
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  padding: 5%;
+}
+
+.left-pane-resume h1 {
+  color: black;
+  padding-top: 5%;
+  align-items: center;
+}
+
+.right-pane-resume h2 {
+  color: black;
+  padding-top: 15%;
+  align-items: center;
+}
+
+.left-pane-resume h2 {
+  color: black;
+}
+
+.header-image {
+  background: url("../images/header.jpeg") repeat-x;
+  background-size: 300px;
+  width: 100%;
+}
+
+.move-left {
+  align-items: left;
+}
+
+@media (max-width: 480px) {
+  .split-screen {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+  }
+
+  .left-pane-resume h1 {
+    padding-top: 10%;
+  }
+}

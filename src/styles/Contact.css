@@ -1,0 +1,23 @@
+.box-container {
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  padding: 5%;
+}
+
+.centered-box {
+  width: 400px; /* Width of the box */
+  height: 400px; /* Height of the box */
+  background-color: palevioletred; /* Background color of the box */
+  color: white; /* Text color inside the box */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  position: relative; /* Position it relative to the page */
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Center the box exactly */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}

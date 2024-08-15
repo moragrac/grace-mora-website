@@ -1,0 +1,52 @@
+.split-screen {
+  display: flex;
+  height: 100vh;
+}
+
+.left-pane,
+.right-pane {
+  flex: 1; /* This makes both panes take equal space */
+  display: flex;
+  flex-direction: column;
+  background-color: lightpink;
+}
+
+.left-pane {
+  background: url("../images/About.JPG");
+  padding-left: 5%;
+}
+
+.left-pane h1 {
+  color: black;
+  padding-top: 5%;
+}
+
+.right-pane h1 {
+  color: black;
+  padding: 5%;
+  align-items: center;
+  align-content: center;
+}
+.right-pane h2 {
+  color: black;
+  padding: 5%;
+}
+
+@media (max-width: 480px) {
+  .split-screen {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .left-pane {
+    background: url("../images/About.JPG") no-repeat;
+    padding-left: 5%;
+    background-position: center;
+  }
+
+  .left-pane h1 {
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+  }
+}
